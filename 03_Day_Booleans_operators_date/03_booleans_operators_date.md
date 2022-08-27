@@ -18,38 +18,38 @@
 ![Thirty Days Of JavaScript](../images/banners/day_1_3.png)
 
 - [📔 Day 3](#-day-3)
-	- [Booleans](#booleans)
-		- [Truthy values](#truthy-values)
-		- [Falsy values](#falsy-values)
-	- [Undefined](#undefined)
-	- [Null](#null)
-	- [Operators](#operators)
-		- [Assignment operators](#assignment-operators)
-		- [Arithmetic Operators](#arithmetic-operators)
-		- [Comparison Operators](#comparison-operators)
-		- [Logical Operators](#logical-operators)
-		- [Increment Operator](#increment-operator)
-		- [Decrement Operator](#decrement-operator)
-		- [Ternary Operators](#ternary-operators)
-		- [Operator Precedence](#operator-precedence)
-	- [Window Methods](#window-methods)
-		- [Window alert() method](#window-alert-method)
-		- [Window prompt() method](#window-prompt-method)
-		- [Window confirm() method](#window-confirm-method)
-	- [Date Object](#date-object)
-		- [Creating a time object](#creating-a-time-object)
-		- [Getting full year](#getting-full-year)
-		- [Getting month](#getting-month)
-		- [Getting date](#getting-date)
-		- [Getting day](#getting-day)
-		- [Getting hours](#getting-hours)
-		- [Getting minutes](#getting-minutes)
-		- [Getting seconds](#getting-seconds)
-		- [Getting time](#getting-time)
-	- [💻 Day 3: Exercises](#-day-3-exercises)
-		- [Exercises: Level 1](#exercises-level-1)
-		- [Exercises: Level 2](#exercises-level-2)
-		- [Exercises: Level 3](#exercises-level-3)
+  - [Booleans](#booleans)
+    - [Truthy values](#truthy-values)
+    - [Falsy values](#falsy-values)
+  - [Undefined](#undefined)
+  - [Null](#null)
+  - [Operators](#operators)
+    - [Assignment operators](#assignment-operators)
+    - [Arithmetic Operators](#arithmetic-operators)
+    - [Comparison Operators](#comparison-operators)
+    - [Logical Operators](#logical-operators)
+    - [Increment Operator](#increment-operator)
+    - [Decrement Operator](#decrement-operator)
+    - [Ternary Operators](#ternary-operators)
+    - [Operator Precedence](#operator-precedence)
+  - [Window Methods](#window-methods)
+    - [Window alert() method](#window-alert-method)
+    - [Window prompt() method](#window-prompt-method)
+    - [Window confirm() method](#window-confirm-method)
+  - [Date Object](#date-object)
+    - [Creating a time object](#creating-a-time-object)
+    - [Getting full year](#getting-full-year)
+    - [Getting month](#getting-month)
+    - [Getting date](#getting-date)
+    - [Getting day](#getting-day)
+    - [Getting hours](#getting-hours)
+    - [Getting minutes](#getting-minutes)
+    - [Getting seconds](#getting-seconds)
+    - [Getting time](#getting-time)
+  - [💻 Day 3: Exercises](#-day-3-exercises)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
 
 # 📔 Day 3
 
@@ -171,7 +171,8 @@ const bodyTemp = 37       // body temperature in oC
  The gravity of earth is 9.81 m/s2.
  */
 console.log(
-  `The boiling point of water is ${boilingPoint} oC.\nHuman body temperature is ${bodyTemp} oC.\nThe gravity of earth is ${gravity} m / s2.`
+  `The boiling point of water is ${boilingPoint} oC.\nHuman body temperature 
+  is ${bodyTemp} oC.\nThe gravity of earth is ${gravity} m / s2.`
 )
 ```
 
@@ -374,7 +375,8 @@ Clicking the OK yields true value, whereas clicking the Cancel button yields fal
 
 ```js
 const agree = confirm('Are you sure you like to delete? ')
-console.log(agree) // result will be true or false based on what you click on the dialog box
+console.log(agree) 
+// result will be true or false based on what you click on the dialog box
 ```
 
 These are not all the window methods we will have a separate section to go deep into window methods.
@@ -470,14 +472,17 @@ This method give time in milliseconds starting from January 1, 1970. It is also 
 
 ```js
 const now = new Date() //
-console.log(now.getTime()) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41
+console.log(now.getTime()) 
+// 1578092201341, this is the number of seconds passed from 
+// January 1, 1970 to January 4, 2020 00:56:41
 ```
 
 1. Using _Date.now()_
 
 ```js
 const allSeconds = Date.now() //
-console.log(allSeconds) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41
+console.log(allSeconds) // 1578092201341, this is the number of seconds 
+// passed from January 1, 1970 to January 4, 2020 00:56:41
 
 const timeInSeconds = new Date().getTime()
 console.log(allSeconds == timeInSeconds) // true
