@@ -19,29 +19,29 @@
 ![Day 5](../images/banners/day_1_9.png)
 
 - [Day 9](#day-9)
-	- [Higher Order Function](#higher-order-function)
-		- [Callback](#callback)
-		- [Returning function](#returning-function)
-		- [Setting time](#setting-time)
-			- [Setting Interval using a setInterval function](#setting-interval-using-a-setinterval-function)
-			- [Setting a time using a setTimeout](#setting-a-time-using-a-settimeout)
-	- [Functional Programming](#functional-programming)
-		- [forEach](#foreach)
-		- [map](#map)
-		- [filter](#filter)
-		- [reduce](#reduce)
-		- [every](#every)
-		- [find](#find)
-		- [findIndex](#findindex)
-		- [some](#some)
-		- [sort](#sort)
-			- [Sorting string values](#sorting-string-values)
-			- [Sorting Numeric values](#sorting-numeric-values)
-			- [Sorting Object Arrays](#sorting-object-arrays)
-	- [💻 Exercises](#-exercises)
-		- [Exercises: Level 1](#exercises-level-1)
-		- [Exercises: Level 2](#exercises-level-2)
-		- [Exercises: Level 3](#exercises-level-3)
+  - [Higher Order Function](#higher-order-function)
+    - [Callback](#callback)
+    - [Returning function](#returning-function)
+    - [Setting time](#setting-time)
+      - [Setting Interval using a setInterval function](#setting-interval-using-a-setinterval-function)
+      - [Setting a time using a setTimeout](#setting-a-time-using-a-settimeout)
+  - [Functional Programming](#functional-programming)
+    - [forEach](#foreach)
+    - [map](#map)
+    - [filter](#filter)
+    - [reduce](#reduce)
+    - [every](#every)
+    - [find](#find)
+    - [findIndex](#findindex)
+    - [some](#some)
+    - [sort](#sort)
+      - [Sorting string values](#sorting-string-values)
+      - [Sorting Numeric values](#sorting-numeric-values)
+      - [Sorting Object Arrays](#sorting-object-arrays)
+  - [💻 Exercises](#-exercises)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
 
 # Day 9
 
@@ -293,7 +293,8 @@ const countriesToUpperCase = countries.map(country => country.toUpperCase());
 ```
 
 ```sh
-['ALBANIA', 'BOLIVIA', 'CANADA', 'DENMARK', 'ETHIOPIA', 'FINLAND', 'GERMANY', 'HUNGARY', 'IRELAND', 'JAPAN', 'KENYA']
+['ALBANIA', 'BOLIVIA', 'CANADA', 'DENMARK', 'ETHIOPIA', 
+'FINLAND', 'GERMANY', 'HUNGARY', 'IRELAND', 'JAPAN', 'KENYA']
 ```
 
 ```js
@@ -357,7 +358,10 @@ console.log(scoresGreaterEighty)
 ```
 
 ```sh
-[{name: 'Asabeneh', score: 95}, { name: 'Lidiya', score: 98 },{name: 'Martha', score: 85},{name: 'John', score: 100}]
+[{name: 'Asabeneh', score: 95}, 
+{ name: 'Lidiya', score: 98 },
+{name: 'Martha', score: 85},
+{name: 'John', score: 100}]
 ```
 
 ### reduce
@@ -669,7 +673,8 @@ const products = [
 3. \*\*\* Try to develop a program which calculate measure of central tendency of a sample(mean, median, mode) and measure of variability(range, variance, standard deviation). In addition to those measures find the min, max, count, percentile, and frequency distribution of the sample. You can create an object called statistics and create all the functions which do statistical calculations as method for the statistics object. Check the output below.
 
    ```js
-   const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
+   const ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 
+   24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
 
    console.log('Count:', statistics.count()) // 25
    console.log('Sum: ', statistics.sum()) // 744
@@ -682,7 +687,9 @@ const products = [
    console.log('Variance: ',statistics.var()) // 17.5
    console.log('Standard Deviation: ', statistics.std()) // 4.2
    console.log('Variance: ',statistics.var()) // 17.5
-   console.log('Frequency Distribution: ',statistics.freqDist()) # [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+   console.log('Frequency Distribution: ',statistics.freqDist()) 
+   # [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), 
+   (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
    ```
 
    ```sh
@@ -697,7 +704,8 @@ const products = [
    Mode:  (26, 5)
    Variance:  17.5
    Standard Deviation:  4.2
-   Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+   Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), 
+   (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
    ```
 
 🎉 CONGRATULATIONS ! 🎉
