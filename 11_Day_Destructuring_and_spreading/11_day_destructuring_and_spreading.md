@@ -327,9 +327,10 @@ const getPersonInfo = ({
   const formattedSkills = skills.slice(0, -1).join(', ')
   const formattedLanguages = languages.slice(0, -1).join(', ')
 
-  personInfo = `${firstName} ${lastName} lives in ${country}. He is ${age} years old. He is an ${job}. He teaches ${formattedSkills} and ${
-    skills[skills.length - 1]
-  }. He speaks ${formattedLanguages} and a little bit of ${languages[2]}.`
+  personInfo = `${firstName} ${lastName} lives in ${country}. 
+  He is ${age} years old. He is an ${job}. He teaches ${formattedSkills} 
+  and ${ skills[skills.length - 1]}. 
+  He speaks ${formattedLanguages} and a little bit of ${languages[2]}.`
 
   return personInfo
 }
