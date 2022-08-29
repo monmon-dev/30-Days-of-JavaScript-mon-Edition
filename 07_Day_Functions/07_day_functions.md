@@ -18,26 +18,26 @@
 ![Thirty Days Of JavaScript](../images/banners/day_1_7.png)
 
 - [📔 Day 7](#-day-7)
-	- [Functions](#functions)
-		- [Function Declaration](#function-declaration)
-		- [Function without a parameter and return](#function-without-a-parameter-and-return)
-		- [Function returning value](#function-returning-value)
-		- [Function with a parameter](#function-with-a-parameter)
-		- [Function with two parameters](#function-with-two-parameters)
-		- [Function with many parameters](#function-with-many-parameters)
-		- [Function with unlimited number of parameters](#function-with-unlimited-number-of-parameters)
-			- [Unlimited number of parameters in regular function](#unlimited-number-of-parameters-in-regular-function)
-			- [Unlimited number of parameters in arrow function](#unlimited-number-of-parameters-in-arrow-function)
-		- [Anonymous Function](#anonymous-function)
-		- [Expression Function](#expression-function)
-		- [Self Invoking Functions](#self-invoking-functions)
-		- [Arrow Function](#arrow-function)
-		- [Function with default parameters](#function-with-default-parameters)
-		- [Function declaration versus Arrow function](#function-declaration-versus-arrow-function)
-	- [💻 Exercises](#-exercises)
-		- [Exercises: Level 1](#exercises-level-1)
-		- [Exercises: Level 2](#exercises-level-2)
-		- [Exercises: Level 3](#exercises-level-3)
+  - [Functions](#functions)
+    - [Function Declaration](#function-declaration)
+    - [Function without a parameter and return](#function-without-a-parameter-and-return)
+    - [Function returning value](#function-returning-value)
+    - [Function with a parameter](#function-with-a-parameter)
+    - [Function with two parameters](#function-with-two-parameters)
+    - [Function with many parameters](#function-with-many-parameters)
+    - [Function with unlimited number of parameters](#function-with-unlimited-number-of-parameters)
+      - [Unlimited number of parameters in regular function](#unlimited-number-of-parameters-in-regular-function)
+      - [Unlimited number of parameters in arrow function](#unlimited-number-of-parameters-in-arrow-function)
+    - [Anonymous Function](#anonymous-function)
+    - [Expression Function](#expression-function)
+    - [Self Invoking Functions](#self-invoking-functions)
+    - [Arrow Function](#arrow-function)
+    - [Function with default parameters](#function-with-default-parameters)
+    - [Function declaration versus Arrow function](#function-declaration-versus-arrow-function)
+  - [💻 Exercises](#-exercises)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
 
 # 📔 Day 7
 
@@ -327,7 +327,8 @@ Self invoking functions are anonymous functions which do not need to be called t
 ```js
 (function(n) {
   console.log(n * n)
-})(2) // 4, but instead of just printing if we want to return and store the data, we do as shown below
+})(2) 
+// 4, but instead of just printing if we want to return and store the data, we do as shown below
 
 let squaredNum = (function(n) {
   return n * n
@@ -446,8 +447,10 @@ function weightOfObject(mass, gravity = 9.81) {
   return weight
 }
 
-console.log('Weight of an object in Newton: ', weightOfObject(100)) // 9.81 gravity at the surface of Earth
-console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) // gravity at surface of Moon
+console.log('Weight of an object in Newton: ', weightOfObject(100)) 
+// 9.81 gravity at the surface of Earth
+console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) 
+// gravity at surface of Moon
 ```
 
 Let us see how we write the above functions with arrow functions
@@ -496,8 +499,10 @@ console.log('Age: ', calculateAge(1819))
 ```js
 const weightOfObject = (mass, gravity = 9.81) => mass * gravity + ' N'
   
-console.log('Weight of an object in Newton: ', weightOfObject(100)) // 9.81 gravity at the surface of Earth
-console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) // gravity at surface of Moon
+console.log('Weight of an object in Newton: ', weightOfObject(100)) 
+// 9.81 gravity at the surface of Earth
+console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62)) 
+// gravity at surface of Moon
 ```
 
 ### Function declaration versus Arrow function
@@ -652,10 +657,14 @@ It Will be covered in other section.
 1. Write a function **_generateColors_** which can generate any number of hexa or rgb colors.
 
     ```js
-    console.log(generateColors('hexa', 3)) // ['#a3e12f', '#03ed55', '#eb3d2b']
-    console.log(generateColors('hexa', 1)) // '#b334ef'
-    console.log(generateColors('rgb', 3)) // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
-    console.log(generateColors('rgb', 1)) // 'rgb(33,79, 176)'
+    console.log(generateColors('hexa', 3)) 
+    // ['#a3e12f', '#03ed55', '#eb3d2b']
+    console.log(generateColors('hexa', 1)) 
+    // '#b334ef'
+    console.log(generateColors('rgb', 3)) 
+    // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
+    console.log(generateColors('rgb', 1)) 
+    // 'rgb(33,79, 176)'
     ```
 
 1. Call your function _shuffleArray_, it takes an array as a parameter and it returns a shuffled array
