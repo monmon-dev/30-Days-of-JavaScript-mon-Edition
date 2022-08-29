@@ -18,17 +18,17 @@
 ![Day 5](../images/banners/day_1_6.png)
 
 - [📔 Day 6](#-day-6)
-	- [Loops](#loops)
-		- [for Loop](#for-loop)
-		- [while loop](#while-loop)
-		- [do while loop](#do-while-loop)
-		- [for of loop](#for-of-loop)
-		- [break](#break)
-		- [continue](#continue)
-	- [💻 Exercises:Day 6](#-exercisesday-6)
-		- [Exercises: Level 1](#exercises-level-1)
-		- [Exercises: Level 2](#exercises-level-2)
-		- [Exercises: Level 3](#exercises-level-3)
+  - [Loops](#loops)
+    - [for Loop](#for-loop)
+    - [while loop](#while-loop)
+    - [do while loop](#do-while-loop)
+    - [for of loop](#for-of-loop)
+    - [break](#break)
+    - [continue](#continue)
+  - [💻 Exercises:Day 6](#-exercisesday-6)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
 
 # 📔 Day 6
 
@@ -386,7 +386,8 @@ for(let i = 0; i <= 5; i++){
 1. Using the above countries array, create the following new array.
 
     ```sh
-    ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+    ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", 
+    "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
     ```
 
 1. Using the above countries array, create an array for countries length'.
@@ -442,7 +443,8 @@ for(let i = 0; i <= 5; i++){
 7. Use the webTechs array to create the following array of arrays:
 
     ```sh
-    [["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
+    [["HTML", 4], ["CSS", 3],["JavaScript", 10],
+    ["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
     ```
 
 8. An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
