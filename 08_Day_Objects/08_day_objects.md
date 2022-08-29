@@ -60,7 +60,8 @@ Without using console.log() open your browser and check, you will see the value 
 ```js
 //scope.js
 a = 'JavaScript' 
-// declaring a variable without let or const make it available in window object and this found anywhere
+// declaring a variable without let or const make it 
+// available in window object and this found anywhere
 
 b = 10 
 // this is a global scope variable and found in the window object
