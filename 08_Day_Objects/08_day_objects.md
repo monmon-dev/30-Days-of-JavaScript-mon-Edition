@@ -18,25 +18,25 @@
 ![Thirty Days Of JavaScript](../images/banners/day_1_8.png)
 
 - [📔 Day 8](#-day-8)
-	- [Scope](#scope)
-		- [Window Global Object](#window-global-object)
-		- [Global scope](#global-scope)
-		- [Local scope](#local-scope)
-	- [📔 Object](#-object)
-		- [Creating an empty object](#creating-an-empty-object)
-		- [Creating an objecting with values](#creating-an-objecting-with-values)
-		- [Getting values from an object](#getting-values-from-an-object)
-		- [Creating object methods](#creating-object-methods)
-		- [Setting new key for an object](#setting-new-key-for-an-object)
-		- [Object Methods](#object-methods)
-			- [Getting object keys using Object.keys()](#getting-object-keys-using-objectkeys)
-			- [Getting object values using Object.values()](#getting-object-values-using-objectvalues)
-			- [Getting object keys and values using Object.entries()](#getting-object-keys-and-values-using-objectentries)
-			- [Checking properties using hasOwnProperty()](#checking-properties-using-hasownproperty)
-	- [💻 Exercises](#-exercises)
-		- [Exercises: Level 1](#exercises-level-1)
-		- [Exercises: Level 2](#exercises-level-2)
-		- [Exercises: Level 3](#exercises-level-3)
+  - [Scope](#scope)
+    - [Window Global Object](#window-global-object)
+    - [Global scope](#global-scope)
+    - [Local scope](#local-scope)
+  - [📔 Object](#-object)
+    - [Creating an empty object](#creating-an-empty-object)
+    - [Creating an objecting with values](#creating-an-objecting-with-values)
+    - [Getting values from an object](#getting-values-from-an-object)
+    - [Creating object methods](#creating-object-methods)
+    - [Setting new key for an object](#setting-new-key-for-an-object)
+    - [Object Methods](#object-methods)
+      - [Getting object keys using Object.keys()](#getting-object-keys-using-objectkeys)
+      - [Getting object values using Object.values()](#getting-object-values-using-objectvalues)
+      - [Getting object keys and values using Object.entries()](#getting-object-keys-and-values-using-objectentries)
+      - [Checking properties using hasOwnProperty()](#checking-properties-using-hasownproperty)
+  - [💻 Exercises](#-exercises)
+    - [Exercises: Level 1](#exercises-level-1)
+    - [Exercises: Level 2](#exercises-level-2)
+    - [Exercises: Level 3](#exercises-level-3)
 
 # 📔 Day 8
 
@@ -59,8 +59,11 @@ Without using console.log() open your browser and check, you will see the value 
 
 ```js
 //scope.js
-a = 'JavaScript' // declaring a variable without let or const make it available in window object and this found anywhere
-b = 10 // this is a global scope variable and found in the window object
+a = 'JavaScript' 
+// declaring a variable without let or const make it available in window object and this found anywhere
+
+b = 10 
+// this is a global scope variable and found in the window object
 function letsLearnScope() {
   console.log(a, b)
   if (true) {
@@ -341,7 +344,8 @@ person.getPersonInfo = function() {
 
   let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`
   let fullName = this.getFullName()
-  let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`
+  let statement = `${fullName} is a ${this.title}.
+  \nHe lives in ${this.country}.\nHe teaches ${skills}.`
   return statement
 }
 console.log(person)
@@ -374,7 +378,8 @@ const person = {
     city: 'Helsinki'
   },
   getPersonInfo: function() {
-    return `I am ${this.firstName} and I live in ${this.city}, ${this.country}. I am ${this.age}.`
+    return `I am ${this.firstName} and I live in ${this.city}, 
+    ${this.country}. I am ${this.age}.`
   }
 }
 
@@ -391,9 +396,12 @@ _Object.keys_: To get the keys or properties of an object as an array
 
 ```js
 const keys = Object.keys(copyPerson)
-console.log(keys) //['firstName', 'age', 'country','city', 'skills','title', 'address', 'getPersonInfo']
+console.log(keys) 
+//['firstName', 'age', 'country','city', 'skills','title', 'address', 'getPersonInfo']
+
 const address = Object.keys(copyPerson.address)
-console.log(address) //['street', 'pobox', 'city']
+console.log(address) 
+//['street', 'pobox', 'city']
 ```
 
 #### Getting object values using Object.values()
