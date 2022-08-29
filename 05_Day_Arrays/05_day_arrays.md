@@ -156,7 +156,7 @@ const charsInJavaScript = js.split('')
 
 console.log(charsInJavaScript) 
 // ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
-
+fr
 let companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
 const companies = companiesString.split(',')
 
@@ -169,7 +169,7 @@ const words = txt.split(' ')
 console.log(words)
 // the text has special characters think how you can just get only the words
 // ["I", "love", "teaching", "and", "empowering", "people.", "I", 
-"teach", "HTML,", "CSS,", "JS,", "React,", "Python"]
+// "teach", "HTML,", "CSS,", "JS,", "React,", "Python"]
 ```
 
 ### Accessing array items using index
@@ -305,7 +305,8 @@ console.log(countries)
 ```
 
 ```sh
-["Afghanistan", "Bolivia", "Canada", "Denmark", "Ethiopia", "Finland", "Germany", "Hungary", "Ireland", "Japan", "Korea"]
+["Afghanistan", "Bolivia", "Canada", "Denmark", "Ethiopia", 
+"Finland", "Germany", "Hungary", "Ireland", "Japan", "Korea"]
 ```
 
 ### Methods to manipulate array
@@ -355,9 +356,12 @@ console.log(thirdList) // [1, 2, 3, 4, 5, 6]
 ```
 
 ```js
-const fruits = ['banana', 'orange', 'mango', 'lemon']                 // array of fruits
-const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of vegetables
-const fruitsAndVegetables = fruits.concat(vegetables)                 // concatenate the two arrays
+const fruits = ['banana', 'orange', 'mango', 'lemon']                 
+// array of fruits
+const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] 
+// array of vegetables
+const fruitsAndVegetables = fruits.concat(vegetables)                 
+// concatenate the two arrays
 
 console.log(fruitsAndVegetables)
 ```
@@ -406,10 +410,14 @@ if(index === -1){
 // This fruit does exist in the array
 
 // we can use also ternary here
-index === -1 ? console.log('This fruit does not exist in the array'): console.log('This fruit does exist in the array')
+index === -1 
+? console.log('This fruit does not exist in the array')
+: console.log('This fruit does exist in the array')
 
 // let us check if an avocado exist in the array
-let indexOfAvocado = fruits.indexOf('avocado')  // -1, if the element not found index is -1
+let indexOfAvocado = fruits.indexOf('avocado')  
+// -1, if the element not found index is -1
+
 if(indexOfAvocado === -1){
    console.log('This fruit does not exist in the array')  
 } else {
@@ -543,7 +551,8 @@ Splice: It takes three parameters:Starting position, number of times to be remov
 ```js
   const numbers = [1, 2, 3, 4, 5, 6]
 	numbers.splice(3, 3, 7, 8, 9)
-  console.log(numbers.splice(3, 3, 7, 8, 9))  // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
+  console.log(numbers.splice(3, 3, 7, 8, 9))  // -> [1, 2, 3, 7, 8, 9] 
+  //it removes three item and replace three items
 ```
 
 #### Adding item to an array using push
@@ -655,10 +664,13 @@ console.log(arrayOfArray[0]) // [1, 2, 3]
  const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
  const backEnd = ['Node','Express', 'MongoDB']
  const fullStack = [frontEnd, backEnd]
- console.log(fullStack)   // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
+ console.log(fullStack)   
+ // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
  console.log(fullStack.length)  // 2
- console.log(fullStack[0])  // ["HTML", "CSS", "JS", "React", "Redux"]
- console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
+ console.log(fullStack[0])  
+ // ["HTML", "CSS", "JS", "React", "Redux"]
+ console.log(fullStack[1]) 
+ // ["Node", "Express", "MongoDB"]
 ```
 
 🌕  You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
@@ -730,7 +742,8 @@ const webTechs = [
     ```
 
     ```sh
-    ["I", "love", "teaching", "and", "empowering", "people", "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
+    ["I", "love", "teaching", "and", "empowering", "people", 
+    "I", "teach", "HTML", "CSS", "JS", "React", "Python"]
   
     13
     ```
